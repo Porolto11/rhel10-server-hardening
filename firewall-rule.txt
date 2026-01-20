@@ -1,0 +1,2 @@
+sudo firewall-cmd --permanent --add-rich-rule='rule family="ipv4" source address="0.0.0.0/0" service name="ssh" limit value="3/m" drop'
+sudo firewall-cmd --reload
